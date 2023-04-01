@@ -1,4 +1,4 @@
-# documentation
+# Organization documents
 
 The purpose of this GitHub repository is the documentation for Kubernetes Application Management with Open Application Model.
 
