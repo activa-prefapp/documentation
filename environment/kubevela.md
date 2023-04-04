@@ -54,3 +54,5 @@ vela system info
 - [KubeVela official website](https://kubevela.io/)
 
 - [KubeVela docs](https://kubevela.io/docs/installation/kubernetes)
+
+*[Home documents](../README.md)*
