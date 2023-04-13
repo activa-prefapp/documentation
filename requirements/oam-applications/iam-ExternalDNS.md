@@ -7,10 +7,10 @@ Follow the steps below prior to the FluxCD deployment of the OAM component that 
 Download the policy with the command:
 
 ```
-curl -o route53-policy <link>
+curl -o route53-policy https://raw.githubusercontent.com/activa-prefapp/documentation/oam-applications-requirements/resources/oam-applications/iam-configuration/route53-policy.json?token=GHSAT0AAAAAAB7LDJOJCP4QS5UHYD6DXIKAZBYJE7Q
 ```
 
-You must replace ``<<Hosted zone ID>`` with the ID of the Route53 hosted zone for which you are creating the policy.
+Using a text editor, you must replace ``<<Hosted Zone Identifier>`` with the identifier of the Route53 hosted zone for which you are creating the policy.
 
 Create the policy by running the following command in the terminal:
 
@@ -22,7 +22,7 @@ aws iam create-policy --policy-name route53-policy --policy-document file://rout
 Download the role with the command:
 
 ```
-curl -o eks-trust-relationship <link>
+curl -o eks-trust-relationship https://raw.githubusercontent.com/activa-prefapp/documentation/oam-applications-requirements/resources/oam-applications/iam-configuration/eks-trust-relationship.json?token=GHSAT0AAAAAAB7LDJOJETHDC4XKOZWYM5BEZBYJF2Q
 ```
 
 You must replace ``<ACCOUNT_NUMBER>``, ``<AWS_REGION>`` and ``<OpenID_Connect_provider>`` with the appropriate values for your environment.
