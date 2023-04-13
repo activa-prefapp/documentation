@@ -19,7 +19,7 @@ aws iam create-policy --policy-name route53-policy --policy-document file://rout
 ```
 
 
-Download the role with the command:
+Download the trust-relationship with the command:
 
 ```
 curl -o eks-trust-relationship https://raw.githubusercontent.com/activa-prefapp/documentation/oam-applications-requirements/resources/oam-applications/iam-configuration/eks-trust-relationship.json?token=GHSAT0AAAAAAB7LDJOJETHDC4XKOZWYM5BEZBYJF2Q
