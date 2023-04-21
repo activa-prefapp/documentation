@@ -1,4 +1,4 @@
-#  IAM for ServiceAccount
+#  IAM OIDC provider
 
 In the context of Amazon Elastic Kubernetes Service (EKS), an IAM OIDC provider is used to authenticate and authorise the AWS Load Balancer Controller (ALB) to manage AWS application load balancers. The AWS Load Balancer Controller uses the IAM OIDC provider to obtain an AWS identity token that is used to authenticate with the Kubernetes API Server and manage AWS Application Load Balancers.
 
