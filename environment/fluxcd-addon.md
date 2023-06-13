@@ -29,4 +29,4 @@ vela addon enable fluxcd
 
 - [KubeVela docs](https://kubevela.io/docs/end-user/components/more)
 
-*[Home documents](../README.md)*
+*[Back to contents](../README.md)*

@@ -5,4 +5,4 @@ Here you can find the necessary documentation and all the information used by th
  1. [Install KubeVela](./kubevela.md)
  2. [Install Helm support with FluxCD addon](./fluxcd-addon.md)
 
-*[Home documents](../README.md)*
+*[Back to contents](../README.md)*
