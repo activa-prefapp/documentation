@@ -21,8 +21,15 @@ Here you will find all the documentation needed to deploy applications from the 
 - https://kubevela.io/docs/
 - https://docs.aws.amazon.com/index.html
 - https://fluxcd.io/flux/
+- https://backstage.io/docs/overview/what-is-backstage
 
-### 2. Helm charts
+
+### 2. External references
+
+- https://github.com/kubevela-contrib/backstage-plugin-kubevela
+- https://github.com/wonderflow/vela-backstage-demo
+
+### 3. Helm charts
 
 - https://artifacthub.io/packages/helm/aws/aws-load-balancer-controller
 - https://artifacthub.io/packages/helm/bitnami/external-dns
