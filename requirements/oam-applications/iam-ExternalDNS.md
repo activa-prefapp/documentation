@@ -45,4 +45,4 @@ Now you can deploy external-DNS on your eks cluster via the oam-component of the
 
 
 
-*[Home documents](../README.md)*
+*[Back to contents](README.md)*

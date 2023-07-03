@@ -11,6 +11,7 @@ Here you will find all the documentation needed to deploy applications from the 
 - [Install Helm support with FluxCD addon](./environment/fluxcd-addon.md)
 ### 2. [Requirements](./requirements/README.md)
 - [OAM Applications](./requirements/oam-applications/README.md)
+- [OAM GitOps requirements](./requirements/gitops-config/README.md)
 
 ## All Sources
 
@@ -19,11 +20,12 @@ Here you will find all the documentation needed to deploy applications from the 
 - https://kubevela.io/
 - https://kubevela.io/docs/
 - https://docs.aws.amazon.com/index.html
+- https://fluxcd.io/flux/
 
 ### 2. Helm charts
 
 - https://artifacthub.io/packages/helm/aws/aws-load-balancer-controller
-- https://kubernetes-sigs.github.io/external-dns/v0.13.4/
+- https://artifacthub.io/packages/helm/bitnami/external-dns
 - https://artifacthub.io/packages/helm/secret-store-csi-driver/secrets-store-csi-driver
 - https://artifacthub.io/packages/helm/aws-web-service/aws-web-service
 - https://artifacthub.io/packages/helm/aws/aws-for-fluent-bit
