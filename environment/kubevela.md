@@ -49,6 +49,35 @@ You can verify the installation with the following command
 vela system info
 ```
 
+## Advanced Installation
+
+The KubeVela installation in Kubernetes is configured with a list of predefined parameters. You can consult the list in the official documentation in the [Advanced Installation section](https://kubevela.net/docs/platform-engineers/system-operation/bootstrap-parameters).
+
+### 1. Consolidation
+
+One of the predefined parameters has to do with the elapsed time for change checking to verify the consolidation between the OAM entities and the generated objects. 
+
+This parameter is application-re-sync-period and is preset to 5 min. You can set the value of this parameter at the time of deploying vela-core
+
+For example, if you use terraform and helm for deployment you can set the value for consolidation revision as follows:
+
+```
+resource "helm_release" "kubevela" {
+  name       = "kubevela"
+  repository = "https://charts.kubevela.net/core"
+  chart      = "vela-core"
+  version    = var.kubevela_version
+  namespace  = "vela-system"
+
+  set {
+    name  = "controllerArgs.reSyncPeriod"
+    value = "1m"
+  }
+
+}
+```
+
+
 ## References
 
 - [KubeVela official website](https://kubevela.io/)
