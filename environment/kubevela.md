@@ -26,7 +26,7 @@ $ vela install
 If you are helm user, you can also use helm to install KubeVela core:
 
 ```
-helm repo add kubevela https://charts.kubevela.net/core
+helm repo add kubevela https://kubevela.github.io/charts/
 helm repo update
 helm install --create-namespace -n vela-system kubevela kubevela/vela-core --wait
 ```
@@ -36,7 +36,7 @@ You can use the helm_release resource type in Terraform for the installation of 
 ```
 resource "helm_release" "kubevela" {
   name       = "kubevela"
-  repository = "https://charts.kubevela.net/core"
+  repository = "https://kubevela.github.io/charts/"
   chart      = "vela-core"
   version    = var.kubevela_version
   namespace  = "vela-system"
@@ -64,7 +64,7 @@ For example, if you use terraform and helm for deployment you can set the value 
 ```
 resource "helm_release" "kubevela" {
   name       = "kubevela"
-  repository = "https://charts.kubevela.net/core"
+  repository = "https://kubevela.github.io/charts/"
   chart      = "vela-core"
   version    = var.kubevela_version
   namespace  = "vela-system"
